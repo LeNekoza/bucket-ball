@@ -88,19 +88,15 @@ type qtyPropType = {
                   if (fullCapacityBalls > 0) {
                     let ballsToPlace = Math.min(fullCapacityBalls, colorBallQuantity);
                     let volumeToPlace = ballsToPlace * ballVolume;
-        
                     if (remainderVolume >= ballVolume && ballQuantities[color] > 0) {
-                      ballsToPlace += 1;
-                      volumeToPlace += ballVolume;
-                      ballQuantities[color] -= 1;
+                        ballsToPlace += 1;
+                        volumeToPlace += ballVolume;
                     }
-        
                     ballQuantities[color] -= ballsToPlace;
                     ballVolumes[color] -= volumeToPlace;
                     bucketVolumes[bucketId] -= volumeToPlace;
-        
                     bucketOutput += ` ${ballsToPlace} ${color} balls`;
-                  }
+                }
                 }
               });
         

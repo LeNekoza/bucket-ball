@@ -36,7 +36,7 @@ export default function App() {
     <div className="text-center my-5 flex flex-col items-center">
       <h1 className="text-2xl font-bold">Output</h1>
       {
-       outputState.split(', ').map((line,i)=>(<div key={`outId${i}`} className="max-w-[50rem] w-[50rem] lg:text-[2rem] bg-yellow-500 mb-2 font-semibold text-black">{line}</div>))
+       outputState.split(', ').map((line,i)=>(<div key={`outId${i}`} className="max-w-[50rem] w-[20rem] lg:text-[2rem] bg-yellow-500 mb-2 font-semibold text-black">{line}</div>))
       }
     </div>
     </>
